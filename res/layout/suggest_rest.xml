@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/suggestResttextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Suggest the new restaurants to add"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/titlebackgroundcolor"
+        android:textSize="@dimen/twentyfontsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SrestNametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/suggestResttextView"
+        android:layout_below="@+id/suggestResttextView"
+        android:layout_marginTop="24dp"
+        android:text="Restaurant Name"
+        android:textColor="@color/titlebackgroundcolor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/SrestNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SrestNametextView"
+        android:layout_centerHorizontal="true"
+        android:ems="12"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/SrestAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SrestNametextView"
+        android:layout_below="@+id/SrestNameEditText"
+        android:text="Restaurant Address"
+        android:textColor="@color/titlebackgroundcolor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SrestPlaceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SrestAddressTextView"
+        android:layout_marginTop="40dp"
+        android:text="Place"
+        android:textColor="@color/titlebackgroundcolor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/SrestAddressEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SrestNameEditText"
+        android:layout_below="@+id/SrestAddressTextView"
+        android:ems="12"
+        android:inputType="textPersonName|textPostalAddress" />
+
+    <EditText
+        android:id="@+id/SrestPlaceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SrestAddressEditText"
+        android:layout_centerVertical="true"
+        android:ems="12"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/RemarksTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SrestAddressTextView"
+        android:layout_below="@+id/SrestPlaceEditText"
+        android:text="Remarks"
+        android:textColor="@color/titlebackgroundcolor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/SrestRemarksET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/SrestPlaceEditText"
+        android:layout_below="@+id/RemarksTextView"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/SrestPlaceTextView"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/SResSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SrestRemarksET"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/SrestNametextView"
+        android:text="Submit"
+        android:textColor="@color/titlebackgroundcolor"
+        android:textSize="@dimen/twentyfontsize"
+        android:textStyle="bold" />
+
+</RelativeLayout>
